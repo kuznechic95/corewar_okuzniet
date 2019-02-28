@@ -12,6 +12,7 @@
 
 #include "corewar.h"
 
+
 /*
 ** Если в каретке еще не сохраненна команда, а место на котором стоит каретка
 ** содержит не коректную команду, то каретка передвигается на 1 шаг вперед.
@@ -23,14 +24,6 @@
 ** В этом коментарии команда употреблялась в значении opcode.
 */
 
-//int		check_position(new_pos)
-//{
-//	new_pos %= MEM_SIZE;
-//	if (new_pos < 0)
-//		new_pos += MEM_SIZE;
-//	return (new_pos);
-//}
-
 unsigned char	read_data(t_vm *vm, int pos, int num_bytes_to_read)
 {
 	return (vm->map[(pos + num_bytes_to_read) % MEM_SIZE].cell);
@@ -39,11 +32,18 @@ unsigned char	read_data(t_vm *vm, int pos, int num_bytes_to_read)
 /*
 ** 0xC0 T_REG
 ** 0x30 T_DIR
-** 0xC0 T_IND
-**
+** 0xC  T_IND
+** T_REG	r	01
+** T_DIR	%	10
+** T_IND		11
 **
 */
 
+void		set_tac(t_carriage *carr, unsigned char code, unsigned char i)
+{
+	carr->type_arg[DEC(i)] = g_ass_ar[DEC(code)];
+
+}
 
 void		read_types_args_codes(t_operations *op, t_vm *vm, t_carriage *carr)
 {
@@ -52,12 +52,11 @@ void		read_types_args_codes(t_operations *op, t_vm *vm, t_carriage *carr)
 	if (op->number_args)
 	{
 		type_code = read_data(vm, carr->position, 1);
-		if (op->number_args >= 1 && ((char)(type_code & 0xC0) >> 6))
-			carr->type_arg[0] = 1;
-		if (op->number_args >= 2 && ((char)(type_code & 0x30) >> 4))
-			carr->type_arg[1] = T_DIR;
-		if (op->number_args == 3 && ((char)(type_code & 0xC) >> 2))
-			carr->type_arg[2] = T_IND;
+		set_tac(carr, ((unsigned char) (type_code & 0xC0) >> 6), 1);
+		if (op->number_args > 1)
+			set_tac(carr, ((unsigned char) (type_code & 0x30) >> 4), 2);
+		if (op->number_args > 2)
+			set_tac(carr, ((unsigned char) (type_code & 0xC) >> 2), 3);
 	}
 	else
 		op->type_args[0] = carr->type_arg[0];
@@ -159,43 +158,3 @@ void		perform_carriages(t_vm *vm)
 //	return (true);
 //}
 
-
-
-//static void	set_arg_type(int8_t arg_type, int8_t index, t_cursor *cursor)
-//{
-//	cursor->args_types[INDEX(index)] = g_arg_code[INDEX(arg_type)];
-//}
-//
-//void		parse_types_code(t_vm *vm, t_cursor *cursor, t_op *op)
-//{
-//	int8_t args_types_code;
-//
-//	if (op->args_types_code)
-//	{
-//		args_types_code = get_byte(vm, cursor->pc, 1);
-//		if (op->args_num >= 1)
-//			set_arg_type((int8_t)((args_types_code & 0xC0) >> 6), 1, cursor);
-//		if (op->args_num >= 2)
-//			set_arg_type((int8_t)((args_types_code & 0x30) >> 4), 2, cursor);
-//		if (op->args_num >= 3)
-//			set_arg_type((int8_t)((args_types_code & 0xC) >> 2), 3, cursor);
-//	}
-//	else
-//		cursor->args_types[0] = op->args_types[0];
-//}
-
-
-//
-//inline int8_t	get_byte(t_vm *vm, int32_t pc, int32_t step)
-//{
-//	return (vm->arena[calc_addr(pc + step)]);
-//}
-
-
-//int32_t		calc_addr(int32_t addr)
-//{
-//	addr %= MEM_SIZE;
-//	if (addr < 0)
-//		addr += MEM_SIZE;
-//	return (addr);
-//}

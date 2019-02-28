@@ -22,6 +22,12 @@
 
 # define MUS_PATH "music/starwars.mp3"
 
+static unsigned char			g_ass_ar[3] = {
+		T_REG,
+		T_DIR,
+		T_IND
+};
+
 typedef struct	s_flags
 {
 	int	h;
@@ -66,7 +72,6 @@ typedef struct	s_carriage
 	int 				cycle_carriage_last_reported_live;
 	t_bot				*parent;
 	int					type_arg[3];
-	
 	unsigned int		register_id[REG_NUMBER + 1];
 	struct s_carriage	*next;
 }				t_carriage;
