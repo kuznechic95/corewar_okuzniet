@@ -1,0 +1,548 @@
+cmake_minimum_required(VERSION 3.13)
+project(corewar C)
+
+set(CMAKE_C_STANDARD 11)
+
+include_directories(asm_src)
+include_directories(corewar_src)
+include_directories(frameworks/SDL2.framework)
+include_directories(frameworks/SDL2.framework/Headers)
+include_directories(frameworks/SDL2.framework/Versions)
+include_directories(frameworks/SDL2.framework/Versions/A)
+include_directories(frameworks/SDL2.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2.framework/Versions/Current)
+include_directories(frameworks/SDL2.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/modplug.framework)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Opus.framework)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current/Headers)
+include_directories(frameworks/SDL2_mixer.framework/Versions/Current/Headers)
+include_directories(includes)
+include_directories(libft)
+
+add_executable(corewar
+        asm_src/add_labels.c
+        asm_src/analyze_arguments.c
+        asm_src/analyze_labels.c
+        asm_src/array_len.c
+        asm_src/bonuses.c
+        asm_src/character_count.c
+        asm_src/check_binary_file.c
+        asm_src/check_commands_and_labels.c
+        asm_src/check_end_of_file.c
+        asm_src/check_file_name.c
+        asm_src/check_name_and_comment.c
+        asm_src/create_file.c
+        asm_src/error.c
+        asm_src/find_opcode.c
+        asm_src/get_arg_by_type.c
+        asm_src/get_name_and_comment.c
+        asm_src/get_type.c
+        asm_src/init_info.c
+        asm_src/is_contains_label.c
+        asm_src/main.c
+        asm_src/new_command.c
+        asm_src/operations_coding.c
+        asm_src/parse_command.c
+        asm_src/print_bytecode.c
+        asm_src/print_champion_file.c
+        asm_src/put_manual.c
+        asm_src/read_champion_code.c
+        asm_src/reverse.c
+        asm_src/trim_arguments.c
+        corewar_src/corewar_op/op_live.c
+        corewar_src/add_labels.c
+        corewar_src/analyze_arguments.c
+        corewar_src/analyze_labels.c
+        corewar_src/array_len.c
+        corewar_src/bonuses.c
+        corewar_src/character_count.c
+        corewar_src/check_binary_file.c
+        corewar_src/check_bot.c
+        corewar_src/check_carriages.c
+        corewar_src/check_commands_and_labels.c
+        corewar_src/check_end_of_file.c
+        corewar_src/check_file_name.c
+        corewar_src/check_key.c
+        corewar_src/check_name_and_comment.c
+        corewar_src/close_visulization.c
+        corewar_src/create_file.c
+        corewar_src/define_bots_id.c
+        corewar_src/draw_info_table.c
+        corewar_src/draw_map.c
+        corewar_src/error.c
+        corewar_src/fill_map.c
+        corewar_src/find_opcode.c
+        corewar_src/ft_live.c
+        corewar_src/get_arg_by_type.c
+        corewar_src/get_name_and_comment.c
+        corewar_src/get_type.c
+        corewar_src/init_info.c
+        corewar_src/introducing_contestants.c
+        corewar_src/is_contains_label.c
+        corewar_src/is_natural.c
+        corewar_src/main.c
+        corewar_src/new_carriage.c
+        corewar_src/new_command.c
+        corewar_src/npause.c
+        corewar_src/operations_coding.c
+        corewar_src/parse_arguments.c
+        corewar_src/parse_command.c
+        corewar_src/perform_carriages.c
+        corewar_src/print_bytecode.c
+        corewar_src/print_champion_file.c
+        corewar_src/print_map.c
+        corewar_src/print_winner.c
+        corewar_src/put_manual.c
+        corewar_src/read_champion_code.c
+        corewar_src/reverse.c
+        corewar_src/sdl_mixer_init.c
+        corewar_src/trim_arguments.c
+        corewar_src/visualization_init.c
+        frameworks/SDL2.framework/Versions/A/Headers/begin_code.h
+        frameworks/SDL2.framework/Versions/A/Headers/close_code.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_assert.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_atomic.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_audio.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_bits.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_blendmode.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_clipboard.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_config.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_config_macosx.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_copying.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_cpuinfo.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_endian.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_error.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_events.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_filesystem.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_gamecontroller.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_gesture.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_haptic.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_hints.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_joystick.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_keyboard.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_keycode.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_loadso.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_log.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_main.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_messagebox.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_mouse.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_mutex.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_name.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_opengl.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_opengl_glext.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_opengles.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_opengles2.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_opengles2_gl2.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_opengles2_gl2ext.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_opengles2_gl2platform.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_opengles2_khrplatform.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_pixels.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_platform.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_power.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_quit.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_rect.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_render.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_revision.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_rwops.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_scancode.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_shape.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_stdinc.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_surface.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_system.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_syswm.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_thread.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_timer.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_touch.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_types.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_version.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_video.h
+        frameworks/SDL2.framework/Versions/A/Headers/SDL_vulkan.h
+        frameworks/SDL2.framework/Versions/Current/Headers/begin_code.h
+        frameworks/SDL2.framework/Versions/Current/Headers/close_code.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_assert.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_atomic.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_audio.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_bits.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_blendmode.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_clipboard.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_config.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_config_macosx.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_copying.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_cpuinfo.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_endian.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_error.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_events.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_filesystem.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_gamecontroller.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_gesture.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_haptic.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_hints.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_joystick.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_keyboard.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_keycode.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_loadso.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_log.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_main.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_messagebox.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_mouse.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_mutex.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_name.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengl.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengl_glext.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengles.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengles2.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengles2_gl2.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengles2_gl2ext.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengles2_gl2platform.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengles2_khrplatform.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_pixels.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_platform.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_power.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_quit.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_rect.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_render.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_revision.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_rwops.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_scancode.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_shape.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_stdinc.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_surface.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_system.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_syswm.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_thread.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_timer.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_touch.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_types.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_version.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_video.h
+        frameworks/SDL2.framework/Versions/Current/Headers/SDL_vulkan.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/all.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/assert.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/callback.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/export.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/format.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/metadata.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/ordinals.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/stream_decoder.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/stream_encoder.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/all.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/assert.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/callback.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/export.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/format.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/metadata.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/ordinals.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_decoder.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_encoder.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/all.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/assert.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/callback.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/export.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/format.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/metadata.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/ordinals.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_decoder.h
+        frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_encoder.h
+        frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/A/Headers/modplug.h
+        frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/Current/Headers/modplug.h
+        frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/A/Headers/fmt123.h
+        frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/A/Headers/mpg123.h
+        frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/Current/Headers/fmt123.h
+        frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/Current/Headers/mpg123.h
+        frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/A/Headers/ogg.h
+        frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/A/Headers/os_types.h
+        frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/Current/Headers/ogg.h
+        frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/Current/Headers/os_types.h
+        frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/A/Headers/opus.h
+        frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/A/Headers/opus_defines.h
+        frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/A/Headers/opus_multistream.h
+        frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/A/Headers/opus_types.h
+        frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/Current/Headers/opus.h
+        frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/Current/Headers/opus_defines.h
+        frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/Current/Headers/opus_multistream.h
+        frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/Current/Headers/opus_types.h
+        frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/A/Headers/opusfile.h
+        frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/Current/Headers/opusfile.h
+        frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/A/Headers/codec.h
+        frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisenc.h
+        frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisfile.h
+        frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/Current/Headers/codec.h
+        frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisenc.h
+        frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisfile.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/all.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/assert.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/callback.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/export.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/format.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/metadata.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/ordinals.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/stream_decoder.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/stream_encoder.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/all.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/assert.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/callback.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/export.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/format.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/metadata.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/ordinals.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_decoder.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_encoder.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/all.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/assert.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/callback.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/export.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/format.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/metadata.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/ordinals.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_decoder.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_encoder.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/A/Headers/modplug.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/Current/Headers/modplug.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/A/Headers/fmt123.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/A/Headers/mpg123.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/Current/Headers/fmt123.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/Current/Headers/mpg123.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/A/Headers/ogg.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/A/Headers/os_types.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/Current/Headers/ogg.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/Current/Headers/os_types.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers/opus.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers/opus_defines.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers/opus_multistream.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers/opus_types.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/Current/Headers/opus.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/Current/Headers/opus_defines.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/Current/Headers/opus_multistream.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/Current/Headers/opus_types.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/A/Headers/opusfile.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/Current/Headers/opusfile.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A/Headers/codec.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisenc.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisfile.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current/Headers/codec.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisenc.h
+        frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisfile.h
+        frameworks/SDL2_mixer.framework/Versions/A/Headers/SDL_mixer.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/all.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/assert.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/callback.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/export.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/format.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/metadata.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/ordinals.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/stream_decoder.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/stream_encoder.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/all.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/assert.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/callback.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/export.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/format.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/metadata.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/ordinals.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_decoder.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_encoder.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/all.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/assert.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/callback.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/export.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/format.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/metadata.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/ordinals.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_decoder.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_encoder.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/A/Headers/modplug.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/Current/Headers/modplug.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/A/Headers/fmt123.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/A/Headers/mpg123.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/Current/Headers/fmt123.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/Current/Headers/mpg123.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/A/Headers/ogg.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/A/Headers/os_types.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/Current/Headers/ogg.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/Current/Headers/os_types.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/A/Headers/opus.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/A/Headers/opus_defines.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/A/Headers/opus_multistream.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/A/Headers/opus_types.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/Current/Headers/opus.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/Current/Headers/opus_defines.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/Current/Headers/opus_multistream.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/Current/Headers/opus_types.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/A/Headers/opusfile.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/Current/Headers/opusfile.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A/Headers/codec.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisenc.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisfile.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current/Headers/codec.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisenc.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisfile.h
+        frameworks/SDL2_mixer.framework/Versions/Current/Headers/SDL_mixer.h
+        includes/asm.h
+        includes/corewar.h
+        includes/op.h
+        includes/op_corewar.h
+        libft/libft.h)

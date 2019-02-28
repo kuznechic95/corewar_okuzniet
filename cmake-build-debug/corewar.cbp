@@ -1,0 +1,1533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="corewar"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/okuzniet/CLionProjects/corewar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/okuzniet/CLionProjects/corewar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/okuzniet/CLionProjects/corewar/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="corewar">
+				<Option output="/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/corewar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/okuzniet/CLionProjects/corewar/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/asm_src"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/corewar_src"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/includes"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/libft"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 corewar"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="corewar/fast">
+				<Option output="/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/corewar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/okuzniet/CLionProjects/corewar/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/asm_src"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/corewar_src"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Headers"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/includes"/>
+					<Add directory="/Users/okuzniet/CLionProjects/corewar/libft"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 corewar/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/okuzniet/CLionProjects/corewar/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/add_labels.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/analyze_arguments.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/analyze_labels.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/array_len.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/bonuses.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/character_count.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/check_binary_file.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/check_commands_and_labels.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/check_end_of_file.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/check_file_name.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/check_name_and_comment.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/create_file.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/error.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/find_opcode.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/get_arg_by_type.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/get_name_and_comment.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/get_type.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/init_info.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/is_contains_label.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/main.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/new_command.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/operations_coding.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/parse_command.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/print_bytecode.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/print_champion_file.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/put_manual.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/read_champion_code.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/reverse.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/asm_src/trim_arguments.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/add_labels.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/analyze_arguments.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/analyze_labels.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/array_len.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/bonuses.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/character_count.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/check_binary_file.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/check_bot.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/check_carriages.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/check_commands_and_labels.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/check_end_of_file.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/check_file_name.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/check_key.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/check_name_and_comment.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/close_visulization.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/corewar_op/op_live.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/create_file.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/define_bots_id.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/draw_info_table.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/draw_map.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/error.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/fill_map.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/find_opcode.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/ft_live.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/get_arg_by_type.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/get_name_and_comment.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/get_type.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/init_info.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/introducing_contestants.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/is_contains_label.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/is_natural.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/main.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/new_carriage.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/new_command.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/npause.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/operations_coding.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/parse_arguments.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/parse_command.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/perform_carriages.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/print_bytecode.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/print_champion_file.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/print_map.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/print_winner.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/put_manual.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/read_champion_code.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/reverse.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/sdl_mixer_init.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/trim_arguments.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/corewar_src/visualization_init.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_assert.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_atomic.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_audio.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_bits.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_blendmode.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_clipboard.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_config.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_config_macosx.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_copying.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_cpuinfo.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_endian.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_error.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_events.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_filesystem.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_gamecontroller.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_gesture.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_haptic.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_hints.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_joystick.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_keyboard.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_keycode.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_loadso.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_log.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_main.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_messagebox.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_mouse.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_mutex.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_name.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_opengl.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_opengl_glext.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_opengles.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_opengles2.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_opengles2_gl2.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_opengles2_gl2ext.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_opengles2_gl2platform.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_opengles2_khrplatform.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_pixels.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_platform.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_power.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_quit.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_rect.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_render.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_revision.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_rwops.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_scancode.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_shape.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_stdinc.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_surface.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_system.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_syswm.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_thread.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_timer.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_touch.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_types.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_version.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_video.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/SDL_vulkan.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/begin_code.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/A/Headers/close_code.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_assert.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_atomic.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_audio.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_bits.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_blendmode.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_clipboard.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_config.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_config_macosx.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_copying.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_cpuinfo.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_endian.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_error.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_events.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_filesystem.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_gamecontroller.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_gesture.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_haptic.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_hints.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_joystick.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_keyboard.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_keycode.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_loadso.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_log.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_main.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_messagebox.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_mouse.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_mutex.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_name.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengl.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengl_glext.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengles.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengles2.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengles2_gl2.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengles2_gl2ext.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengles2_gl2platform.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_opengles2_khrplatform.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_pixels.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_platform.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_power.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_quit.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_rect.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_render.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_revision.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_rwops.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_scancode.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_shape.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_stdinc.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_surface.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_system.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_syswm.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_thread.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_timer.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_touch.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_types.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_version.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_video.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/SDL_vulkan.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/begin_code.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2.framework/Versions/Current/Headers/close_code.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/all.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/assert.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/callback.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/export.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/format.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/metadata.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/ordinals.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/stream_decoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Headers/FLAC/stream_encoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/all.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/assert.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/callback.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/export.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/format.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/metadata.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/ordinals.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_decoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_encoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/all.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/assert.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/callback.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/export.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/format.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/metadata.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/ordinals.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_decoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_encoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/A/Headers/ogg.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/A/Headers/os_types.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/Current/Headers/ogg.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Ogg.framework/Versions/Current/Headers/os_types.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/A/Headers/opus.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/A/Headers/opus_defines.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/A/Headers/opus_multistream.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/A/Headers/opus_types.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/Current/Headers/opus.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/Current/Headers/opus_defines.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/Current/Headers/opus_multistream.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Opus.framework/Versions/Current/Headers/opus_types.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/A/Headers/opusfile.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/OpusFile.framework/Versions/Current/Headers/opusfile.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/A/Headers/codec.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisenc.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisfile.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/Current/Headers/codec.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisenc.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisfile.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/A/Headers/modplug.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/modplug.framework/Versions/Current/Headers/modplug.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/A/Headers/fmt123.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/A/Headers/mpg123.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/Current/Headers/fmt123.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Frameworks/mpg123.framework/Versions/Current/Headers/mpg123.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/all.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/assert.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/callback.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/export.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/format.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/metadata.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/ordinals.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/stream_decoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Headers/FLAC/stream_encoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/all.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/assert.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/callback.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/export.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/format.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/metadata.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/ordinals.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_decoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_encoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/all.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/assert.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/callback.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/export.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/format.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/metadata.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/ordinals.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_decoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_encoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/A/Headers/ogg.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/A/Headers/os_types.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/Current/Headers/ogg.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Ogg.framework/Versions/Current/Headers/os_types.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers/opus.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers/opus_defines.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers/opus_multistream.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers/opus_types.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/Current/Headers/opus.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/Current/Headers/opus_defines.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/Current/Headers/opus_multistream.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/Current/Headers/opus_types.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/A/Headers/opusfile.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/OpusFile.framework/Versions/Current/Headers/opusfile.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A/Headers/codec.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisenc.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisfile.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current/Headers/codec.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisenc.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisfile.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/A/Headers/modplug.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/Current/Headers/modplug.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/A/Headers/fmt123.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/A/Headers/mpg123.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/Current/Headers/fmt123.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Frameworks/mpg123.framework/Versions/Current/Headers/mpg123.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/A/Headers/SDL_mixer.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/all.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/assert.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/callback.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/export.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/format.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/metadata.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/ordinals.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/stream_decoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Headers/FLAC/stream_encoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/all.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/assert.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/callback.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/export.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/format.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/metadata.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/ordinals.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_decoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/A/Headers/FLAC/stream_encoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/all.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/assert.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/callback.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/export.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/format.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/metadata.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/ordinals.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_decoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/FLAC.framework/Versions/Current/Headers/FLAC/stream_encoder.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/A/Headers/ogg.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/A/Headers/os_types.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/Current/Headers/ogg.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Ogg.framework/Versions/Current/Headers/os_types.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/A/Headers/opus.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/A/Headers/opus_defines.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/A/Headers/opus_multistream.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/A/Headers/opus_types.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/Current/Headers/opus.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/Current/Headers/opus_defines.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/Current/Headers/opus_multistream.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Opus.framework/Versions/Current/Headers/opus_types.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/A/Headers/opusfile.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/OpusFile.framework/Versions/Current/Headers/opusfile.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A/Headers/codec.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisenc.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/A/Headers/vorbisfile.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current/Headers/codec.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisenc.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/Vorbis.framework/Versions/Current/Headers/vorbisfile.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/A/Headers/modplug.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/modplug.framework/Versions/Current/Headers/modplug.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/A/Headers/fmt123.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/A/Headers/mpg123.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/Current/Headers/fmt123.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Frameworks/mpg123.framework/Versions/Current/Headers/mpg123.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/frameworks/SDL2_mixer.framework/Versions/Current/Headers/SDL_mixer.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/includes/asm.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/includes/corewar.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/includes/op.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/includes/op_corewar.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/libft/libft.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/okuzniet/CLionProjects/corewar/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
