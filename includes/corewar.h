@@ -20,6 +20,7 @@
 # include "op_corewar.h"
 # include <stdio.h> //потом убрать
 
+
 # define MUS_PATH "music/starwars.mp3"
 
 static unsigned char			g_ass_ar[3] = {
@@ -53,6 +54,9 @@ typedef struct	s_bot
 	unsigned char	*exec_code;
 	char			name[PROG_NAME_LENGTH + 1];
 	char			comment[COMMENT_LENGTH + 1];
+	int 			cycle_bot_last_said_alive;
+	int				number_bot_said_alive;
+	
 }				t_bot;
 
 typedef struct	s_map
@@ -69,10 +73,11 @@ typedef struct	s_carriage
 	int					position;
 	int					opcode;
 	int					cycles_left;
-	int 				cycle_carriage_last_reported_live;
+	int 				cycle_carr_last_reported_live;
 	t_bot				*parent;
 	int					type_arg[3];
 	unsigned int		register_id[REG_NUMBER + 1];
+	unsigned int		bytes_to_pass;
 	struct s_carriage	*next;
 }				t_carriage;
 
@@ -180,6 +185,15 @@ typedef struct	s_operations
 	int		cycles;
 	void	(*function)(t_vm *, t_carriage *);
 }				t_operations;
+
+
+
+unsigned char	read_data(t_map *map, int pos, int num_bytes_to_read);
+
+
+
+
+void		op_live(t_vm *vm, t_carriage *carr);
 
 static t_operations g_operations[16] = {
 	{

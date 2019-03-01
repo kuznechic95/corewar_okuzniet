@@ -59,5 +59,6 @@ typedef char					t_arg_type;
 # define OPCODE(i)				g_operations[i - 1].opcode
 # define INC(i)				(i+1)
 # define DEC(i)				(i-1)
+# define LEN_OF_OPERATION 1
 
 #endif

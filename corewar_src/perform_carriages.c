@@ -24,9 +24,9 @@
 ** В этом коментарии команда употреблялась в значении opcode.
 */
 
-unsigned char	read_data(t_vm *vm, int pos, int num_bytes_to_read)
+unsigned char	read_data(t_map *map, int pos, int num_bytes_to_read)
 {
-	return (vm->map[(pos + num_bytes_to_read) % MEM_SIZE].cell);
+	return (map[(pos + num_bytes_to_read) % MEM_SIZE].cell);
 }
 
 /*
@@ -51,15 +51,13 @@ void		read_types_args_codes(t_operations *op, t_vm *vm, t_carriage *carr)
 	
 	if (op->number_args)
 	{
-		type_code = read_data(vm, carr->position, 1);
+		type_code = read_data(vm->map, carr->position, 1);
 		set_tac(carr, ((unsigned char) (type_code & 0xC0) >> 6), 1);
 		if (op->number_args > 1)
 			set_tac(carr, ((unsigned char) (type_code & 0x30) >> 4), 2);
 		if (op->number_args > 2)
 			set_tac(carr, ((unsigned char) (type_code & 0xC) >> 2), 3);
 	}
-	else
-		op->type_args[0] = carr->type_arg[0];
 }
 
 int 		is_valid_arg(t_operations *op, t_vm *vm, t_carriage *carr)
@@ -91,12 +89,12 @@ static void	perform_carriage(t_carriage *carr, t_vm *vm)
 		if (carr->cycles_left == 0)
 		{
 			op = &g_operations[DEC(carr->opcode)];
-			ft_printf("op = &g_operations[DEC(carr->opcode)]; : %d \n", op->opcode);
+	//		ft_printf("op = &g_operations[DEC(carr->opcode)]; : %d \n", op->opcode);
 			read_types_args_codes(op, vm, carr);
 			if (is_valid_arg(op, vm, carr))
 				g_operations[carr->opcode - 1].function(vm, carr);
 			//ft_printf("Выполняем cmd %d, двигаем каретку\n", carr->opcode);
-			ft_printf("Выполняем cmd %d, двигаем каретку\n", carr->type_arg[0]);
+	//		ft_printf("Выполняем cmd %d, двигаем каретку\n", carr->type_arg[0]);
 			carr->opcode = 0;
 		}
 	}

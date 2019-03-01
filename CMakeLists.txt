@@ -211,7 +211,7 @@ add_executable(corewar
         asm_src/read_champion_code.c
         asm_src/reverse.c
         asm_src/trim_arguments.c
-        corewar_src/corewar_op/op_live.c
+        corewar_src/op_live.c
         corewar_src/add_labels.c
         corewar_src/analyze_arguments.c
         corewar_src/analyze_labels.c

@@ -40,6 +40,7 @@ void		visulization(t_vm *vm)
 	visualization_init(vm);
 	if (vm->flags->m)
 		sdl_mixer_init(vm);
+	npause(vm);
 	while (vm->current_cycle < 10000)
 	{
 		vm->current_cycle++;

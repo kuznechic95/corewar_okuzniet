@@ -13,7 +13,7 @@
 NAME = ../corewar
 LIB = ../libft/libft.a
 LIBDIR = ../libft
-FLAGS = -Wall -Wextra -Werror 
+FLAGS = -Wall -Wextra -Werror -g
 COREWAR_SRC = main.c init_info.c put_manual.c parse_arguments.c reverse.c \
 	print_winner.c is_natural.c check_bot.c error.c fill_map.c draw_map.c \
 	new_carriage.c visualization_init.c check_key.c define_bots_id.c  \
