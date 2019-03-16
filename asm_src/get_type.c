@@ -25,7 +25,7 @@ static int	is_type_reg(char *s)
 		if (s[i] || i == 1)
 			return (0);
 		temp = atoi(s + 1);
-		if (temp >= 0 && temp <= REG_NUMBER && i <= 3)
+		if (temp > 0 && temp <= REG_NUMBER && i <= 3)
 			return (1);
 	}
 	return (0);

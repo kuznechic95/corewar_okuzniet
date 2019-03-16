@@ -97,7 +97,7 @@ char			*ft_strtrim(char const *s);
 
 char			*ft_itoa(int n);
 char			**ft_strsplit(char const *s, char c);
-char			*ft_add(char *buf, const char *add, int sz1, int sz2);
+char			*ft_add_str(char *buf, const char *add, int sz1, int sz2);
 char			*ft_whitespaces(char *str);
 int				ft_atoi(const char *str);
 char			*ft_itoa_base(int number, int base);

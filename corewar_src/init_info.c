@@ -46,6 +46,18 @@ static void		init_available_ids(t_vm *info)
 	}
 }
 
+static void		init_lives(t_vm *info)
+{
+	info->previous_lives[0] = 0;
+	info->previous_lives[1] = 0;
+	info->previous_lives[2] = 0;
+	info->previous_lives[3] = 0;
+	info->current_lives[0] = 0;
+	info->current_lives[1] = 0;
+	info->current_lives[2] = 0;
+	info->current_lives[3] = 0;
+}
+
 t_vm			*init_info(int argc, char **argv)
 {
 	t_vm	*info;
@@ -53,6 +65,7 @@ t_vm			*init_info(int argc, char **argv)
 	info = (t_vm*)malloc(sizeof(t_vm));
 	info->flags = init_flags();
 	init_available_ids(info);
+	init_lives(info);
 	info->number_of_bots = 0;
 	info->num_of_carriages = 0;
 	info->error_reason = NULL;
@@ -66,7 +79,7 @@ t_vm			*init_info(int argc, char **argv)
 	info->cycle_check = info->cycle_to_die;
 	info->number_of_checks = 0;
 	info->number_of_lives = 0;
-	info->winner = NULL;
+	info->last_live_bot = NULL;
 	if (argc == 1)
 		put_manual(info);
 	return (info);

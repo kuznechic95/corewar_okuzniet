@@ -19,7 +19,7 @@ static void	draw_elem(t_vm *vm, int i, int pair)
 	wattroff(vm->w, COLOR_PAIR(pair));
 }
 
-static int	check_carriage(t_vm *vm, int pos)
+static int	check_carriage(t_vm *vm, unsigned int pos)
 {
 	t_carriage *temp;
 
@@ -44,7 +44,13 @@ void		draw_map(t_vm *vm)
 	while (i < MEM_SIZE)
 	{
 		if ((car_id = check_carriage(vm, i)))
-			draw_elem(vm, i, car_id + 10);
+			draw_elem(vm, i, vm->map[i].color + 10);
+		else if (vm->map[i].cycles)
+		{
+			draw_elem(vm, i, vm->map[i].temp_color);
+			if (vm->running)
+				vm->map[i].cycles--;
+		}
 		else
 			draw_elem(vm, i, vm->map[i].color);
 		i++;

@@ -97,6 +97,8 @@ void		check_bot(t_vm *info, int *i)
 	check_file_name(info, i);
 	check_binary_file(info);
 	check_exec_code(info);
+	info->bot[info->number_of_bots].lives_current_period = 0;
+	info->bot[info->number_of_bots].cycle_last_live = 0;
 	info->number_of_bots++;
 	(*i)++;
 }

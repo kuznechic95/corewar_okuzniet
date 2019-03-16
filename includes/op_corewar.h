@@ -55,10 +55,12 @@ typedef char					t_arg_type;
 # define PROG_NAME_LENGTH		128
 # define COMMENT_LENGTH			2048
 # define COREWAR_EXEC_MAGIC		0xea83f3
+# define MUS_PATH				"music/starwars.mp3"
 # define CYCLES(i)				g_operations[i - 1].cycles
 # define OPCODE(i)				g_operations[i - 1].opcode
-# define INC(i)				(i+1)
-# define DEC(i)				(i-1)
-# define LEN_OF_OPERATION 1
+# define SIZE_DIR(i)			g_operations[i - 1].dir_size
+# define CODE_TYPE(i)			g_operations[i - 1].code_type
+# define NUMBER_ARGS(i)			g_operations[i - 1].number_args
+# define TYPE_ARG(i, j)			g_operations[i - 1].type_args[j]
 
 #endif

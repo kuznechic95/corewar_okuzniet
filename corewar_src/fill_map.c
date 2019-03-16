@@ -25,6 +25,8 @@ static void	put_bot(t_vm *info, int num_recorded_bots, int *i)
 	{
 		info->map[*i].cell = exec_code[size - temp];
 		info->map[*i].color = info->bot[num_recorded_bots].id;
+		info->map[*i].temp_color = 0;
+		info->map[*i].cycles = 0;
 		(*i)++;
 		temp--;
 	}
@@ -47,6 +49,8 @@ void		fill_map(t_vm *info)
 		}
 		info->map[i].cell = 0;
 		info->map[i].color = 10;
+		info->map[i].temp_color = 0;
+		info->map[i].cycles = 0;
 		i++;
 	}
 }

@@ -1,32 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   character_count.c                                  :+:      :+:    :+:   */
+/*   get_arg_position.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bdomansk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/17 16:40:10 by bdomansk          #+#    #+#             */
-/*   Updated: 2019/01/17 16:40:12 by bdomansk         ###   ########.fr       */
+/*   Created: 2019/03/05 16:51:17 by bdomansk          #+#    #+#             */
+/*   Updated: 2019/03/05 16:51:19 by bdomansk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "asm.h"
+#include "corewar.h"
 
-int		character_count(char c, char *s)
+int	get_arg_position(t_carriage *carriage, int index)
 {
+	int	position;
 	int i;
-	int count;
 
 	i = 0;
-	count = 0;
-	if (s)
+	position = carriage->position + 1;
+	while (i < index)
 	{
-		while (s[i])
-		{
-			if (s[i] == c)
-				count++;
-			i++;
-		}
+		position = position + get_size_by_type(carriage, i);
+		i++;
 	}
-	return (count);
+	position = position % MEM_SIZE;
+	return (position);
 }

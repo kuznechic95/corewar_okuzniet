@@ -60,4 +60,5 @@ void		define_bots_id(t_vm *info)
 	}
 	if (info->flags->n)
 		sort_bots_by_id(info);
+	info->last_live_bot = &info->bot[info->number_of_bots - 1];
 }

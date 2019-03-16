@@ -5,35 +5,32 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bdomansk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/04/11 16:48:31 by bdomansk          #+#    #+#             */
-/*   Updated: 2018/04/11 16:48:35 by bdomansk         ###   ########.fr       */
+/*   Created: 2019/03/05 16:45:36 by bdomansk          #+#    #+#             */
+/*   Updated: 2019/03/05 16:45:39 by bdomansk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "corewar.h"
 
-char	*ft_add_str(char *buf, const char *need_add, int size1, int size2)
+void		ft_add(t_vm *vm, t_carriage *carriage)
 {
-	char	*temp;
-	int		i;
-	int		k;
+	int i;
+	int	sum;
+	int	position;
+	int	id_reg[3];
 
 	i = 0;
-	k = 0;
-	temp = (char*)malloc(size1 + size2 + 1);
-	while (i < size1)
+	while (i < 3)
 	{
-		temp[i] = buf[i];
+		position = get_arg_position(carriage, i);
+		id_reg[i] = (unsigned char)get_arg_from_map(vm->map, position, 1);
 		i++;
 	}
-	while (k < size2)
-	{
-		temp[i] = need_add[k];
-		i++;
-		k++;
-	}
-	temp[i] = '\0';
-	if (size1 != 0)
-		free(buf);
-	return (temp);
+	if (!vm->flags->v && vm->flags->ops)
+		ft_printf("P %4d | add r%d r%d r%d\n",
+		carriage->id, id_reg[0], id_reg[1], id_reg[2]);
+	sum = carriage->registers[id_reg[0]] + carriage->registers[id_reg[1]];
+	carriage->registers[id_reg[2]] = sum;
+	carriage->carry = (sum == 0) ? 1 : 0;
+	move_carriage(vm, carriage);
 }

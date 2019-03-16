@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is_contains_label.c                                :+:      :+:    :+:   */
+/*   get_size_by_type.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bdomansk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/27 18:09:58 by bdomansk          #+#    #+#             */
-/*   Updated: 2018/11/27 18:10:02 by bdomansk         ###   ########.fr       */
+/*   Created: 2019/03/03 15:09:22 by bdomansk          #+#    #+#             */
+/*   Updated: 2019/03/03 15:09:24 by bdomansk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "asm.h"
+#include "corewar.h"
 
-int	is_contains_label(char *s, int i)
+extern const t_operations g_operations[16];
+
+int	get_size_by_type(t_carriage *carriage, int i)
 {
-	int start;
-
-	start = i;
-	while (s[i] && s[i] != LABEL_CHAR)
-	{
-		if (!ft_strchr(LABEL_CHARS, s[i]))
-			return (0);
-		i++;
-	}
-	if (i != start && s[i] == LABEL_CHAR)
+	if (carriage->arg_type[i] == T_DIR)
+		return (SIZE_DIR(carriage->opcode));
+	if (carriage->arg_type[i] == T_IND)
+		return (IND_SIZE);
+	if (carriage->arg_type[i] == T_REG)
 		return (1);
 	return (0);
 }

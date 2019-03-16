@@ -5,63 +5,59 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bdomansk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/09 16:25:14 by bdomansk          #+#    #+#             */
-/*   Updated: 2019/02/09 16:25:16 by bdomansk         ###   ########.fr       */
+/*   Created: 2019/03/05 12:42:18 by bdomansk          #+#    #+#             */
+/*   Updated: 2019/03/05 12:42:20 by bdomansk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "asm.h"
+#include "corewar.h"
 
-static void	get_arg_type_dir(t_asm *info, t_command *cmd, int i)
+extern const t_operations g_operations[16];
+
+static int	get_arg_type_reg(t_map *map, t_carriage *carriage, int position)
 {
-	int				desired_type;
-	unsigned int	buf;
+	unsigned char	register_id;
 
-	desired_type = g_operations[cmd->opcode - 1].type_args[i];
-	if ((desired_type | T_DIR) != desired_type)
-		error_reason(info, "Wrong argument type");
-	if (!read(info->fd, &buf, g_operations[cmd->opcode - 1].dir_size))
-		error_reason(info, "No argument");
-	buf = reverse(buf, g_operations[cmd->opcode - 1].dir_size);
-	cmd->arg[i].value = (int)buf;
-	cmd->arg[i].type = T_DIR;
+	register_id = (unsigned char)get_arg_from_map(map, position, 1);
+	return (carriage->registers[register_id]);
 }
 
-static void	get_arg_type_ind(t_asm *info, t_command *cmd, int i)
+static int	get_arg_type_dir(t_map *map, t_carriage *carriage, int position)
 {
-	int				desired_type;
-	unsigned int	buf;
+	int	value;
+	int	size;
 
-	desired_type = g_operations[cmd->opcode - 1].type_args[i];
-	if ((desired_type | T_IND) != desired_type)
-		error_reason(info, "Wrong argument type");
-	if (!read(info->fd, &buf, IND_SIZE))
-		error_reason(info, "No argument");
-	buf = reverse(buf, IND_SIZE);
-	cmd->arg[i].value = (int)buf;
-	cmd->arg[i].type = T_IND;
+	size = SIZE_DIR(carriage->opcode);
+	if (size == 2)
+		value = (short)get_arg_from_map(map, position, 2);
+	else
+		value = (int)get_arg_from_map(map, position, 4);
+	return (value);
 }
 
-static void	get_arg_type_reg(t_asm *info, t_command *cmd, int i)
+static int	get_arg_type_ind(t_map *map, t_carriage *carriage, int position)
 {
-	int				desired_type;
-	unsigned char	buf;
+	int	value;
+	int	address;
 
-	desired_type = g_operations[cmd->opcode - 1].type_args[i];
-	if ((desired_type | T_REG) != desired_type)
-		error_reason(info, "Wrong argument type");
-	if (!read(info->fd, &buf, 1))
-		error_reason(info, "No argument");
-	cmd->arg[i].value = (int)buf;
-	cmd->arg[i].type = T_REG;
+	address = (short)get_arg_from_map(map, position, IND_SIZE);
+	if (carriage->opcode != 13)
+		address = address % IDX_MOD;
+	value = (int)get_arg_from_map(map, carriage->position + address - 1, 4);
+	return (value);
 }
 
-void		get_arg_by_type(t_asm *info, t_command *cmd, int i, int type)
+int			get_arg_by_type(t_vm *vm, t_carriage *carriage, int index)
 {
+	int	type;
+	int position;
+
+	type = carriage->arg_type[index];
+	position = get_arg_position(carriage, index);
+	if (type == T_REG)
+		return (get_arg_type_reg(vm->map, carriage, position));
 	if (type == T_DIR)
-		get_arg_type_dir(info, cmd, i);
-	else if (type == T_IND)
-		get_arg_type_ind(info, cmd, i);
-	else if (type == T_REG)
-		get_arg_type_reg(info, cmd, i);
+		return (get_arg_type_dir(vm->map, carriage, position));
+	else
+		return (get_arg_type_ind(vm->map, carriage, position));
 }

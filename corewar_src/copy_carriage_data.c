@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   array_len.c                                        :+:      :+:    :+:   */
+/*   copy_carriage_data.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bdomansk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/17 15:32:10 by bdomansk          #+#    #+#             */
-/*   Updated: 2019/01/17 15:32:14 by bdomansk         ###   ########.fr       */
+/*   Created: 2019/03/09 16:44:12 by bdomansk          #+#    #+#             */
+/*   Updated: 2019/03/09 16:44:13 by bdomansk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "asm.h"
+#include "corewar.h"
 
-int	array_len(char **array)
+void	copy_carriage_data(t_carriage *dst, t_carriage *src)
 {
-	int i;
+	int	i;
 
-	i = 0;
-	if (array)
+	i = 1;
+	while (i < REG_NUMBER)
 	{
-		while (array[i])
-			i++;
+		dst->registers[i] = src->registers[i];
+		i++;
 	}
-	return (i);
+	dst->arg_type[0] = src->arg_type[0];
+	dst->arg_type[1] = src->arg_type[2];
+	dst->arg_type[2] = src->arg_type[2];
+	dst->carry = src->carry;
+	dst->cycle_last_live = src->cycle_last_live;
+	dst->alive = src->alive;
 }

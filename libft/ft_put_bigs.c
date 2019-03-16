@@ -56,7 +56,7 @@ static char	*ft_parse_array(t_specifiers *s, int *str, int *size)
 				free(need_to_add);
 			break ;
 		}
-		part = ft_add(part, need_to_add, (*size), len_need_to_add);
+		part = ft_add_str(part, need_to_add, (*size), len_need_to_add);
 		(*size) += len_need_to_add;
 		if (len_need_to_add)
 			free(need_to_add);

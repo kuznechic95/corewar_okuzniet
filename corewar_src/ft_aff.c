@@ -1,36 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   find_opcode.c                                      :+:      :+:    :+:   */
+/*   ft_aff.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bdomansk <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/01 17:23:40 by bdomansk          #+#    #+#             */
-/*   Updated: 2018/12/01 17:23:42 by bdomansk         ###   ########.fr       */
+/*   Created: 2019/03/09 20:10:07 by bdomansk          #+#    #+#             */
+/*   Updated: 2019/03/09 20:10:08 by bdomansk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "asm.h"
+#include "corewar.h"
 
-int	find_opcode(char *s, int start)
+void		ft_aff(t_vm *vm, t_carriage *carriage)
 {
-	char	*name;
-	int		i;
-	int		j;
-	int		k;
+	int	reg_id;
+	int	position;
+	int	value;
 
-	i = 0;
-	while (g_operations[i].name)
-	{
-		name = g_operations[i].name;
-		j = 0;
-		k = start;
-		while (s[k] && name[j] && s[k++] == name[j])
-			j++;
-		if (!name[j] && (!s[k] || s[k] == ' ' || s[k] == '\t' ||
-			s[k] == '%' || s[k] == '-' || ft_isdigit(s[k])))
-			return (g_operations[i].opcode);
-		i++;
-	}
-	return (0);
+	position = carriage->position + 1;
+	reg_id = (unsigned char)get_arg_from_map(vm->map, position, 1);
+	value = carriage->registers[reg_id];
+	if (!vm->flags->v)
+		ft_printf("Aff: %c\n", (char)value);
+	move_carriage(vm, carriage);
 }

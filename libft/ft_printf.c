@@ -39,13 +39,13 @@ static char	*ft_parse_format(const char *format, va_list ap, int *k)
 		if (format[i] == '%')
 		{
 			need_to_add = ft_prepare(format, &i, k, ap);
-			buf = ft_add(buf, need_to_add, temp, (*k) - temp);
+			buf = ft_add_str(buf, need_to_add, temp, (*k) - temp);
 			if (need_to_add)
 				free(need_to_add);
 		}
 		else
 		{
-			buf = ft_add(buf, &format[i++], temp, 1);
+			buf = ft_add_str(buf, &format[i++], temp, 1);
 			(*k)++;
 		}
 	}
